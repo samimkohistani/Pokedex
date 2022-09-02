@@ -2,13 +2,17 @@
 const express = require("express");
 const app = express();
 const port = 3000;
-cnost pokemon = require("./models/pokemon")
+const pokemon = require("./models/pokemon")
 
 app.get("/pokemon", (req, res) => {
-  res.render("index_views.ejs", {
+  res.render("pokemon_index.ejs", {
       pokemons: pokemon,
   });
 });
+
+
+
+
 
   
 
