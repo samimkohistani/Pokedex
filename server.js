@@ -6,9 +6,10 @@ const port = 3000;
 const methodOverride = require("method-override");
 const pokemon = require("./models/pokemon");
 
-
 app.use(express.urlencoded({extended : false}));
 app.use(methodOverride("_method"));
+app.use(express.static("Style"));
+
 
 // Begginer page
 
